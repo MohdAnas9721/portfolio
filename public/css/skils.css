@@ -9,3 +9,7 @@ body{
     display: flex;
     justify-content: center;
 }
+.design{
+    background-color: bisque;
+    padding: 10px;
+}
