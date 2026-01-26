@@ -1,0 +1,11 @@
+body{
+    text-decoration: none;
+}
+
+.all-over{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
