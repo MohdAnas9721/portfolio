@@ -1,44 +1,57 @@
+/* FOOTER BASE */
 .site-footer {
-    background: #0f172a;
-    color: #fff;
-    padding: 40px 20px;
-    font-family: 'Inter', sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  padding:5px 10px;
 }
 
+/* CONTAINER */
 .footer-container {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;   /* mobile first */
+  align-items: center;
+  text-align: center;
+  gap: 20px;
 }
 
-.footer-left h3 {
-    margin: 0;
-    font-size: 1.2rem;
-}
-
+/* LEFT (agar future me text add karo) */
+.footer-left h3,
 .footer-left p {
-    margin: 5px 0 0;
-    font-size: 0.9rem;
-    color: #cbd5e1;
+  margin: 0;
+}
+
+/* CENTER LINKS */
+.footer-center {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer-center a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #cbd5e1;
-    font-size: 0.9rem;
-    transition: 0.3s;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
 .footer-center a:hover {
-    color: #38bdf8;
+  color: #ffffff;
 }
 
-.footer-right p {
-    font-size: 0.85rem;
-    color: #94a3b8;
+/* RIGHT */
+.footer-right .allegic {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 5px;
+
+}
+
+/* RESPONSIVE FOR DESKTOP */
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* sab center hi rahenge */
+  }
 }
